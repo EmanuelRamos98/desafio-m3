@@ -1,0 +1,19 @@
+
+
+.logo{
+    width: 54px;
+    height: 50px;
+}
+.header{
+    padding: 18px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+
+ .nav-mobil{
+     display: flex;
+     flex-direction: column;
+     gap: 7px;
+ }
