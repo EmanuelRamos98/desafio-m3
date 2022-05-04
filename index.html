@@ -11,7 +11,7 @@
     <title>Desafio Modulo 3</title>
 </head>
 <body>
-<--Header-->
+<!--Header-->
     <header class="header">
         <img class="logo" src="./img/logo.png" alt="logo-dev">
         <nav class="nav-mobil">
@@ -21,11 +21,11 @@
         </nav>
         <nav class="nav-pc">
             <a href="#quien-soy" class="nav-pc-a">Quien Soy</a>
-            <a href="servicios" class="nav-pc-a">Servicios</a>
-            <a href="formulario" class="nav-pc-a">Escribime</a>
+            <a href="#servicios" class="nav-pc-a">Servicios</a>
+            <a href="#formulario" class="nav-pc-a">Escribime</a>
         </nav>
     </header>
-<--Main-->
+<!--Main-->
     <main class="main">
         <div class="main-div-principal">
             <div class="primer-div">
@@ -36,7 +36,7 @@
             </div>
         </div>
     </main>
-
+<!--Seccion 1-->
     <section class="seccion-1" id="quien-soy">
         <div class="primer-div-secc-1">
             <h2 class="subtitulo">Soy Manu</h2>
@@ -48,7 +48,50 @@
             <img src="./img/check (1) 1.svg" alt="check" class="imagen-check">
         </div>
     </section>
-
+<!--Seccion 2-->
+    <section class="seccion-2" id="servicios">
+        <h2 class="subtitulo-secc-2">Mis servicios</h2>
+        <div class="servicios">
+            <div class="div-servicios">
+                <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
+                <h2>Hago cosas</h2>
+                <div class="parrafo-secc-2">
+                    <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
+                </div>
+            </div>
+            <div class="div-servicios">
+                <img src="./img/pc-icon.svg" alt="pc" class="imagen=pc">
+                <h2>Y mas cosas</h2>
+                <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
+            </div>
+            <div class="div-servicios">
+                <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
+                <h2>Y tambien otras cosas</h2>
+                <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
+            </div>
+        </div>
+    </section>
+<!--Contacto-->
+    <section class="contacto">
+        <div class="titulo-escribime">
+            <h2 class="escribime">Escribime</h2>
+        </div>
+        <div class="formulario" id="formulario">
+            <div class="fieldset">
+                <label for="nombre" class="label">Nombre</label>
+                <input type="text" class="input-text">
+            </div>
+            <div class="fieldset">
+                <label for="email" class="label">Email</label>
+                <input class="input-text" id="email" type="text">
+            </div>
+                <label for="mensaje" class="label">Mensaje</label>
+                <textarea name="Mensaje" id="mensaje" class="textarea"></textarea>
+            <div class="boton-enviar">
+                <button class="boton">Enviar</button>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
