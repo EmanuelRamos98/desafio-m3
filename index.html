@@ -11,87 +11,114 @@
     <title>Desafio Modulo 3</title>
 </head>
 <body>
-<!--Header-->
-    <header class="header">
+    <!--Header-->
+    <header class="header-contenedor">
         <img class="logo" src="./img/logo.png" alt="logo-dev">
-        <nav class="nav-mobil">
-            <button class="boton-header"></button>
-            <button class="boton-header"></button>
-            <button class="boton-header"></button>
+        <nav class="hamburger">
+            <button class="boton-movil"></button>
+            <button class="boton-movil"></button>
+            <button class="boton-movil"></button>
         </nav>
-        <nav class="nav-pc">
-            <a href="#quien-soy" class="nav-pc-a">Quien Soy</a>
-            <a href="#servicios" class="nav-pc-a">Servicios</a>
-            <a href="#formulario" class="nav-pc-a">Escribime</a>
+        <nav class="navegacion">
+            <a href="#quien-soy" class="navegacion-enlace">Quien Soy</a>
+            <a href="#servicios" class="navegacion-enlace">Servicios</a>
+            <a href="#escribime" class="navegacion-enlace">Escribime</a>
         </nav>
     </header>
-<!--Main-->
-    <main class="main">
-        <div class="main-div-principal">
-            <div class="primer-div">
-                <h1 class="titulo-main">BIENVENIDOS A MI SITIO</h1>
-            </div>
-            <div class="segundo-div">
-                <img src="./img/foto1.png" alt="" class="foto-main">
-            </div>
-        </div>
-    </main>
-<!--Seccion 1-->
-    <section class="seccion-1" id="quien-soy">
-        <div class="primer-div-secc-1">
-            <h2 class="subtitulo">Soy Manu</h2>
-            <p class="parrafo-secc-1">
-                Algo sobre mi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sequi. Soluta debitis sint voluptatum, quaerat, quam natus, est necessitatibus minus excepturi ab facilis praesentium fuga rem quisquam distinctio et repudiandae.
-            </p>
-        </div>
-        <div class="segundo-div-secc-1">
-            <img src="./img/check (1) 1.svg" alt="check" class="imagen-check">
-        </div>
+    <section class="hero">
+            <h1>Bienvenido a mi sitio</h1>
+            <img src="./img/foto1.png" alt="yo" class="foto-main">
     </section>
-<!--Seccion 2-->
-    <section class="seccion-2" id="servicios">
-        <h2 class="subtitulo-secc-2">Mis servicios</h2>
+    <!--Main-->
+    <main class="contendor">
+        <!--Sobre mi-->
+        <section class="sobre-mi" id="quien-soy">
+            <div class="icono-sm">
+                <img src="./img/check (1) 1.svg" alt="check">
+            </div>
+            <div class="sobre-mi-contenido">
+                <h3>Soy Manu</h3>
+            <p>Algo sobre mi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sequi. Soluta debitis sint voluptatum, quaerat, quam natus, est necessitatibus minus excepturi ab facilis praesentium fuga rem quisquam distinctio et repudiandae.</p>
+            </div>
+        </section>
+        <!--Servicios-->
+        <h2 class="titulo-servicios" id="servicios">Mis servicios</h2>
         <div class="servicios">
-            <div class="div-servicios">
-                <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
-                <h2>Hago cosas</h2>
-                <div class="parrafo-secc-2">
-                    <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
+            
+            <section class="servicio">
+                <div class="iconos">
+                    <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
                 </div>
-            </div>
-            <div class="div-servicios">
-                <img src="./img/pc-icon.svg" alt="pc" class="imagen=pc">
-                <h2>Y mas cosas</h2>
+                <div class="contenido-servicio">
+                <h3>Hago cosas</h3>
                 <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
-            </div>
-            <div class="div-servicios">
-                <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
-                <h2>Y tambien otras cosas</h2>
+                </div>
+            </section>
+            <section class="servicio">
+                <div class="iconos">
+                    <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
+                </div>
+                <div class="contenido-servicio">
+                <h3>Y mas cosas</h3>
                 <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
+                </div>
+            </section>
+            <section class="servicio">
+                <div class="iconos">
+                    <img src="./img/pc-icon.svg" alt="pc" class="imagen-pc">
+                </div>
+                <div class="contenido-servicio">
+                <h3>Y tambien otras cosas</h3>
+                <p>Mis servicios son, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto optio sequi pariatur eaque minus similique accusantium incidunt ratione, voluptas voluptatem, nulla repellendus ipsum corrupti odio aliquid vero illo sint laboriosam.</p>
+                </div>
+            </section>
+        </div>
+        <!--Contacto-->
+        <section class="contacto">
+            <h2 class="titulo-contacto">Escribime</h2>
+            <form class="formulario" id="escribime">
+                <fieldset>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Nombre">
+                        </div>
+                        <div class="campo">
+                            <label>Email</label>
+                            <input class="input-text" type="email" placeholder="mail@example.com">
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> 
+                    <div>
+                        <input class="boton w-sm-100" type="sumbit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!--Redes-->
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="./img/logo.png" alt="logo" class="segundo-logo">
+            <h5 class="derechos-de-autor"> © 2021 Emanuel</h5>
+        </div>
+        <div class="redes">
+            <div class="red-individual">
+                <img class="redes-logos" src="./img/instagram.svg" alt="">
+                <a href="" class="link-red">Instagram</a>
+            </div>
+            <div class="red-individual">
+                <img class="redes-logos" src="./img/Linkedin.svg" alt="">
+                <a href="" class="link-red">Linkedin</a>
+            </div>
+            <div class="red-individual">
+                <img class="redes-logos" src="./img/Github.svg" alt="">
+                <a href="" class="link-red">Github</a>
             </div>
         </div>
-    </section>
-<!--Contacto-->
-    <section class="contacto">
-        <div class="titulo-escribime">
-            <h2 class="escribime">Escribime</h2>
-        </div>
-        <div class="formulario" id="formulario">
-            <div class="fieldset">
-                <label for="nombre" class="label">Nombre</label>
-                <input type="text" class="input-text">
-            </div>
-            <div class="fieldset">
-                <label for="email" class="label">Email</label>
-                <input class="input-text" id="email" type="text">
-            </div>
-                <label for="mensaje" class="label">Mensaje</label>
-                <textarea name="Mensaje" id="mensaje" class="textarea"></textarea>
-            <div class="boton-enviar">
-                <button class="boton">Enviar</button>
-            </div>
-        </div>
-    </section>
-    
+    </footer> 
 </body>
 </html>
